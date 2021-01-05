@@ -1,4 +1,4 @@
-from sklearn.naive_bayes import GaussianNB
+from sklearn.mixture import GaussianMixture
 from colorama import Fore, Back, Style
 import matplotlib.pyplot as plt
 import numpy as np
@@ -16,13 +16,12 @@ def dataSetReader(path):
 
 
 # -----= Read Dataset
-train_x = dataSetReader('../Dataset/UCI HAR Dataset/train/X_train.txt')
-train_y = dataSetReader('../Dataset/UCI HAR Dataset/train/y_train.txt')
-test_x = dataSetReader('../Dataset/UCI HAR Dataset/test/X_test.txt')
-test_y = dataSetReader('../Dataset/UCI HAR Dataset/test/y_test.txt')
+train_x = dataSetReader('../../Dataset/UCI HAR Dataset/train/X_train.txt')
+train_y = dataSetReader('../../Dataset/UCI HAR Dataset/train/y_train.txt')
+test_x = dataSetReader('../../Dataset/UCI HAR Dataset/test/X_test.txt')
+test_y = dataSetReader('../../Dataset/UCI HAR Dataset/test/y_test.txt')
 
-alpha = 0.1
-clf = GaussianNB()
+clf = GaussianMixture(covariance_type='tied', n_components=6)
 clf.fit(train_x, train_y)
 result = []
 currect = 0
@@ -33,7 +32,5 @@ for i in range(len(labels_predict)):
         currect += 1
     result.append([i, test_y[i], labels_predict[i]])
 
-print("\n Accuracy : {}".format((currect/len(test_y))*100))
-print("\n MissClassification : {}".format(((len(test_y) - currect)/len(test_y))*100))
-
-
+print("\n Accuracy : {}".format((currect / len(test_y)) * 100))
+print("\n MissClassification : {}".format(((len(test_y) - currect) / len(test_y)) * 100))

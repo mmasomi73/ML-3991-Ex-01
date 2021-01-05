@@ -1,4 +1,4 @@
-from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import Perceptron
 from colorama import Fore, Back, Style
 import matplotlib.pyplot as plt
 import numpy as np
@@ -16,12 +16,12 @@ def dataSetReader(path):
 
 
 # -----= Read Dataset
-train_x = dataSetReader('../Dataset/UCI HAR Dataset/train/X_train.txt')
-train_y = dataSetReader('../Dataset/UCI HAR Dataset/train/y_train.txt')
-test_x = dataSetReader('../Dataset/UCI HAR Dataset/test/X_test.txt')
-test_y = dataSetReader('../Dataset/UCI HAR Dataset/test/y_test.txt')
+train_x = dataSetReader('../../Dataset/UCI HAR Dataset/train/X_train.txt')
+train_y = dataSetReader('../../Dataset/UCI HAR Dataset/train/y_train.txt')
+test_x = dataSetReader('../../Dataset/UCI HAR Dataset/test/X_test.txt')
+test_y = dataSetReader('../../Dataset/UCI HAR Dataset/test/y_test.txt')
 
-clf = LogisticRegression(solver='sag', max_iter=100, random_state=42, multi_class='multinomial')
+clf = Perceptron(tol=1e-3, random_state=0)
 clf.fit(train_x, train_y)
 result = []
 currect = 0

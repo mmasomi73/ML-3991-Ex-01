@@ -1,4 +1,4 @@
-from sklearn.linear_model import SGDClassifier
+from sklearn.naive_bayes import GaussianNB
 from colorama import Fore, Back, Style
 import matplotlib.pyplot as plt
 import numpy as np
@@ -16,13 +16,13 @@ def dataSetReader(path):
 
 
 # -----= Read Dataset
-train_x = dataSetReader('../Dataset/UCI HAR Dataset/train/X_train.txt')
-train_y = dataSetReader('../Dataset/UCI HAR Dataset/train/y_train.txt')
-test_x = dataSetReader('../Dataset/UCI HAR Dataset/test/X_test.txt')
-test_y = dataSetReader('../Dataset/UCI HAR Dataset/test/y_test.txt')
+train_x = dataSetReader('../../Dataset/UCI HAR Dataset/train/X_train.txt')
+train_y = dataSetReader('../../Dataset/UCI HAR Dataset/train/y_train.txt')
+test_x = dataSetReader('../../Dataset/UCI HAR Dataset/test/X_test.txt')
+test_y = dataSetReader('../../Dataset/UCI HAR Dataset/test/y_test.txt')
 
-max_iter = 100
-clf = SGDClassifier(loss="hinge", penalty="elasticnet", max_iter=max_iter)
+alpha = 0.1
+clf = GaussianNB()
 clf.fit(train_x, train_y)
 result = []
 currect = 0
@@ -35,6 +35,5 @@ for i in range(len(labels_predict)):
 
 print("\n Accuracy : {}".format((currect/len(test_y))*100))
 print("\n MissClassification : {}".format(((len(test_y) - currect)/len(test_y))*100))
-print("\n Coefficients : {}".format(clf.coef_))
 
 

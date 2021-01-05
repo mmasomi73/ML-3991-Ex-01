@@ -1,4 +1,5 @@
-from sklearn.linear_model import Perceptron
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.naive_bayes import MultinomialNB
 from colorama import Fore, Back, Style
 import matplotlib.pyplot as plt
 import numpy as np
@@ -16,12 +17,17 @@ def dataSetReader(path):
 
 
 # -----= Read Dataset
-train_x = dataSetReader('../Dataset/UCI HAR Dataset/train/X_train.txt')
-train_y = dataSetReader('../Dataset/UCI HAR Dataset/train/y_train.txt')
-test_x = dataSetReader('../Dataset/UCI HAR Dataset/test/X_test.txt')
-test_y = dataSetReader('../Dataset/UCI HAR Dataset/test/y_test.txt')
+train_x = dataSetReader('../../Dataset/UCI HAR Dataset/train/X_train.txt')
+train_y = dataSetReader('../../Dataset/UCI HAR Dataset/train/y_train.txt')
+test_x = dataSetReader('../../Dataset/UCI HAR Dataset/test/X_test.txt')
+test_y = dataSetReader('../../Dataset/UCI HAR Dataset/test/y_test.txt')
 
-clf = Perceptron(tol=1e-3, random_state=0)
+scaler = MinMaxScaler()
+train_x = scaler.fit_transform(train_x)
+test_x = scaler.fit_transform(test_x)
+
+alpha = 0.1
+clf = MultinomialNB()
 clf.fit(train_x, train_y)
 result = []
 currect = 0
@@ -32,6 +38,8 @@ for i in range(len(labels_predict)):
         currect += 1
     result.append([i, test_y[i], labels_predict[i]])
 
-print("\n Accuracy : {}".format((currect / len(test_y)) * 100))
-print("\n MissClassification : {}".format(((len(test_y) - currect) / len(test_y)) * 100))
+print("\n Accuracy : {}".format((currect/len(test_y))*100))
+print("\n MissClassification : {}".format(((len(test_y) - currect)/len(test_y))*100))
 print("\n Coefficients : {}".format(clf.coef_))
+
+

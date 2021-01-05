@@ -1,5 +1,4 @@
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.linear_model import SGDClassifier
 from colorama import Fore, Back, Style
 import matplotlib.pyplot as plt
 import numpy as np
@@ -17,17 +16,13 @@ def dataSetReader(path):
 
 
 # -----= Read Dataset
-train_x = dataSetReader('../Dataset/UCI HAR Dataset/train/X_train.txt')
-train_y = dataSetReader('../Dataset/UCI HAR Dataset/train/y_train.txt')
-test_x = dataSetReader('../Dataset/UCI HAR Dataset/test/X_test.txt')
-test_y = dataSetReader('../Dataset/UCI HAR Dataset/test/y_test.txt')
+train_x = dataSetReader('../../Dataset/UCI HAR Dataset/train/X_train.txt')
+train_y = dataSetReader('../../Dataset/UCI HAR Dataset/train/y_train.txt')
+test_x = dataSetReader('../../Dataset/UCI HAR Dataset/test/X_test.txt')
+test_y = dataSetReader('../../Dataset/UCI HAR Dataset/test/y_test.txt')
 
-scaler = MinMaxScaler()
-train_x = scaler.fit_transform(train_x)
-test_x = scaler.fit_transform(test_x)
-
-alpha = 0.1
-clf = MultinomialNB()
+max_iter = 100
+clf = SGDClassifier(loss="hinge", penalty="elasticnet", max_iter=max_iter)
 clf.fit(train_x, train_y)
 result = []
 currect = 0
