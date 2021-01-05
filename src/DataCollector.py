@@ -24,7 +24,7 @@ class DataCollector:
         self.train_y = self.dataSetReader(self.path + 'train/y_train.txt')
         if log:
             print(Fore.GREEN + "\tTrain Labels Has Been Read")
-            print(Fore.GREEN + "\tTrain Data Has {} Class".format(np.unique(self.train_y)))
+            print(Fore.GREEN + "\tTrain Data Has {} Class".format(len(np.unique(self.train_y))))
 
         self.test_x = self.dataSetReader(self.path + 'test/X_test.txt')
         if log:
