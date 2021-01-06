@@ -25,6 +25,7 @@ class KNeighborsClassifier:
         self.test_y = test_y
 
     def train(self):
+        self.currect = 0
         self.st_tr_time = datetime.datetime.now().timestamp()
         self.clf = KNeighborsClassifier(n_neighbors=11)
         self.clf.fit(self.train_x, self.train_y)

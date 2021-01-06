@@ -31,6 +31,7 @@ class PerceptronClassifier:
         self.en_tr_time = datetime.datetime.now().timestamp()
 
     def predic(self):
+        self.currect = 0
         self.st_te_time = datetime.datetime.now().timestamp()
         self.labels_predict = self.clf.predict(self.test_x)
         self.en_te_time = datetime.datetime.now().timestamp()

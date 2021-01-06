@@ -27,6 +27,7 @@ class MHARC:
 
     def executor(self):
         for itr in range(10):
+            print("-----= Iteration:{} ".format(itr))
             self.acc = {}
             self.GradientDescentDriver()
             self.NaiveBayesDriver()
@@ -43,7 +44,7 @@ class MHARC:
         gradientdescent.train()
         gradientdescent_labels_1 = gradientdescent.predic()
         gradientdescent_acc = gradientdescent.getAccuracy()
-        gradientdescent.printResult()
+        # gradientdescent.printResult()
         self.acc['gradientdescent'] = {'accuracy': gradientdescent_acc,
                                        'train-time': gradientdescent.trainTime(),
                                        'test-time': gradientdescent.testTime()
@@ -55,7 +56,7 @@ class MHARC:
         naivebayes.train_1()
         naivebayes_labels = naivebayes.predic()
         naivebayes_acc = naivebayes.getAccuracy()
-        naivebayes.printResult()
+        # naivebayes.printResult()
         self.acc['naivebayes-GaussianNB'] = {'accuracy': naivebayes_acc,
                                              'train-time': naivebayes.trainTime(),
                                              'test-time': naivebayes.testTime(),
@@ -64,7 +65,7 @@ class MHARC:
         naivebayes.train_2()
         naivebayes_labels_2 = naivebayes.predic()
         naivebayes_acc = naivebayes.getAccuracy()
-        naivebayes.printResult()
+        # naivebayes.printResult()
         self.acc['naivebayes-MultinomialNB'] = {'accuracy': naivebayes_acc,
                                                 'train-time': naivebayes.trainTime(),
                                                 'test-time': naivebayes.testTime(),
@@ -73,7 +74,7 @@ class MHARC:
         naivebayes.train_3()
         naivebayes_labels_3 = naivebayes.predic()
         naivebayes_acc = naivebayes.getAccuracy()
-        naivebayes.printResult()
+        # naivebayes.printResult()
         self.acc['naivebayes-ComplementNB'] = {'accuracy': naivebayes_acc,
                                                'train-time': naivebayes.trainTime(),
                                                'test-time': naivebayes.testTime(),
@@ -83,7 +84,7 @@ class MHARC:
         naivebayes.train_1()
         naivebayes_labels = naivebayes.predic()
         naivebayes_acc = naivebayes.getAccuracy()
-        naivebayes.printResult()
+        # naivebayes.printResult()
         self.acc['naivebayes-GaussianNB'] = {'accuracy': naivebayes_acc,
                                              'train-time': naivebayes.trainTime(),
                                              'test-time': naivebayes.testTime(),
@@ -95,7 +96,7 @@ class MHARC:
         perceptron.train()
         perceptron_labels_1 = perceptron.predic()
         perceptron_acc = perceptron.getAccuracy()
-        perceptron.printResult()
+        # perceptron.printResult()
         self.acc['perceptron'] = {'accuracy': perceptron_acc,
                                   'train-time': perceptron.trainTime(),
                                   'test-time': perceptron.testTime()
@@ -107,7 +108,7 @@ class MHARC:
         logisticregression.train()
         logisticregression_labels_1 = logisticregression.predic()
         logisticregression_acc = logisticregression.getAccuracy()
-        logisticregression.printResult()
+        # logisticregression.printResult()
         self.acc['logisticregression'] = {'accuracy': logisticregression_acc,
                                           'train-time': logisticregression.trainTime(),
                                           'test-time': logisticregression.testTime()
@@ -119,7 +120,7 @@ class MHARC:
         gaussianmixture.train_1()
         gaussianmixture_labels = gaussianmixture.predic()
         gaussianmixture_acc = gaussianmixture.getAccuracy()
-        gaussianmixture.printResult()
+        # gaussianmixture.printResult()
         self.acc['gaussianmixture-GaussianMixture'] = {'accuracy': gaussianmixture_acc,
                                                        'train-time': gaussianmixture.trainTime(),
                                                        'test-time': gaussianmixture.testTime(),
@@ -128,7 +129,7 @@ class MHARC:
         gaussianmixture.train_2()
         gaussianmixture_labels_2 = gaussianmixture.predic()
         gaussianmixture_acc = gaussianmixture.getAccuracy()
-        gaussianmixture.printResult()
+        # gaussianmixture.printResult()
         self.acc['gaussianmixture-BayesianGaussianMixture'] = {'accuracy': gaussianmixture_acc,
                                                                'train-time': gaussianmixture.trainTime(),
                                                                'test-time': gaussianmixture.testTime(),
@@ -140,7 +141,7 @@ class MHARC:
         svm.train_1()
         svm_labels = svm.predic()
         svm_acc = svm.getAccuracy()
-        svm.printResult()
+        # svm.printResult()
         self.acc['svm-NuSVC'] = {'accuracy': svm_acc,
                                  'train-time': svm.trainTime(),
                                  'test-time': svm.testTime(),
@@ -149,7 +150,7 @@ class MHARC:
         svm.train_2()
         svm_labels_2 = svm.predic()
         svm_acc = svm.getAccuracy()
-        svm.printResult()
+        # svm.printResult()
         self.acc['svm-LinearSVC'] = {'accuracy': svm_acc,
                                      'train-time': svm.trainTime(),
                                      'test-time': svm.testTime(),
@@ -157,7 +158,7 @@ class MHARC:
         svm.train_3()
         svm_labels_3 = svm.predic()
         svm_acc = svm.getAccuracy()
-        svm.printResult()
+        # svm.printResult()
         self.acc['svm-SVC'] = {'accuracy': svm_acc,
                                'train-time': svm.trainTime(),
                                'test-time': svm.testTime(),
@@ -169,7 +170,7 @@ class MHARC:
         kneighbors.train()
         kneighbors_labels = kneighbors.predic()
         kneighbors_acc = kneighbors.getAccuracy()
-        kneighbors.printResult()
+        # kneighbors.printResult()
         self.acc['kneighbors'] = {'accuracy': kneighbors_acc,
                                   'train-time': kneighbors.trainTime(),
                                   'test-time': kneighbors.testTime(),
@@ -188,8 +189,3 @@ class MHARC:
                 acc['train-time'] + ',' +
                 acc['test-time'] + '\n'
             )
-
-
-if __name__ == '__main__':
-    mharc = MHARC(True)
-    mharc.executor()
