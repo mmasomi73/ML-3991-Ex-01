@@ -1,5 +1,5 @@
 import datetime
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn.neighbors import KNeighborsClassifier as KNNClassifier
 
 
 class KNeighborsClassifier:
@@ -27,13 +27,13 @@ class KNeighborsClassifier:
     def train(self):
         self.currect = 0
         self.st_tr_time = datetime.datetime.now().timestamp()
-        self.clf = KNeighborsClassifier(n_neighbors=11)
+        self.clf = KNNClassifier(n_neighbors=11)
         self.clf.fit(self.train_x, self.train_y)
         self.en_tr_time = datetime.datetime.now().timestamp()
 
     def train_withK(self, n_neighbors=11):
         self.st_tr_time = datetime.datetime.now().timestamp()
-        self.clf = KNeighborsClassifier(n_neighbors=n_neighbors)
+        self.clf = KNNClassifier(n_neighbors=n_neighbors)
         self.clf.fit(self.train_x, self.train_y)
         self.en_tr_time = datetime.datetime.now().timestamp()
 

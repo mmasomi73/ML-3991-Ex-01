@@ -1,0 +1,811 @@
+	+----------------------------------------------
+	Read HAR Dataset Begin.
+	Train Data Has Been Read
+	Train Data Has 561 Features and 7352 Instances
+	Train Labels Has Been Read
+	Train Data Has 6 Class
+	Test Data Has Been Read
+	Train Data Has 561 Features and 2947 Instances
+	Test Labels Has Been Read
+	Test Data Has 6 Class
+	-----=[HAR Dataset Has Totally 10299 Records in 6 Class]=-----
+	+----------------------------------------------
+-----= Iteration:0 
+	+-----=[ Gradient Descent Classifier ]=----- 
+	| Train Time         : 5.722636938095093
+	| Test  Time         : 0.008548974990844727
+	| Accuracy           : 95.58873430607397
+	| MissClassification : 4.411265693926027
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.11811089515686035
+	| Test  Time         : 0.20601296424865723
+	| Accuracy           : 77.02748557855446
+	| MissClassification : 22.97251442144554
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.024657011032104492
+	| Test  Time         : 0.0059049129486083984
+	| Accuracy           : 77.29894808279606
+	| MissClassification : 22.701051917203934
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.020287036895751953
+	| Test  Time         : 0.006227970123291016
+	| Accuracy           : 48.761452324397695
+	| MissClassification : 51.238547675602305
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.1346290111541748
+	| Test  Time         : 0.21106815338134766
+	| Accuracy           : 65.52426196131658
+	| MissClassification : 34.47573803868341
+	------------------------------------------- 
+	+-----=[ Perceptron Classifier ]=----- 
+	| Train Time         : 1.1405301094055176
+	| Test  Time         : 0.012832880020141602
+	| Accuracy           : 94.84221241940956
+	| MissClassification : 5.157787580590431
+	------------------------------------------- 
+	+-----=[ Logistic Regression Classifier ]=----- 
+	| Train Time         : 16.56197714805603
+	| Test  Time         : 0.0
+	| Accuracy           : 95.75839837122497
+	| MissClassification : 4.241601628775025
+	------------------------------------------- 
+	+-----=[ Gaussian Mixture Classifier ]=----- 
+	| Train Time         : 43.13473892211914
+	| Test  Time         : 0.41422009468078613
+	| Accuracy           : 1.017984390906006
+	| MissClassification : 98.98201560909399
+	------------------------------------------- 
+	+-----=[ Gaussian Mixture Classifier ]=----- 
+	| Train Time         : 104.86459279060364
+	| Test  Time         : 0.4462161064147949
+	| Accuracy           : 31.62538174414659
+	| MissClassification : 68.37461825585342
+	------------------------------------------- 
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 27.71995711326599
+	| Test  Time         : 16.875748872756958
+	| Accuracy           : 92.53478113335596
+	| MissClassification : 7.4652188666440455
+	------------------------------------------- 
+
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 5.603173017501831
+	| Test  Time         : 0.007903099060058594
+	| Accuracy           : 96.60671869697998
+	| MissClassification : 3.39328130302002
+	------------------------------------------- 
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 4.178452014923096
+	| Test  Time         : 7.474998950958252
+	| Accuracy           : 94.02782490668477
+	| MissClassification : 5.9721750933152356
+	------------------------------------------- 
+	+-----=[ KNN Classifier ]=----- 
+	| Train Time         : 0.010142087936401367
+	| Test  Time         : 0.9780089855194092
+	| Accuracy           : 90.46487953851374
+	| MissClassification : 9.535120461486258
+	------------------------------------------- 
+-----= Iteration:1 
+	+-----=[ Gradient Descent Classifier ]=----- 
+	| Train Time         : 5.346927165985107
+	| Test  Time         : 0.005513906478881836
+	| Accuracy           : 95.14760773668137
+	| MissClassification : 4.852392263318629
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.1299588680267334
+	| Test  Time         : 0.2087411880493164
+	| Accuracy           : 77.02748557855446
+	| MissClassification : 22.97251442144554
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.026024818420410156
+	| Test  Time         : 0.0059201717376708984
+	| Accuracy           : 77.29894808279606
+	| MissClassification : 22.701051917203934
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.021382808685302734
+	| Test  Time         : 0.0055599212646484375
+	| Accuracy           : 48.761452324397695
+	| MissClassification : 51.238547675602305
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.1208498477935791
+	| Test  Time         : 0.21578717231750488
+	| Accuracy           : 65.52426196131658
+	| MissClassification : 34.47573803868341
+	------------------------------------------- 
+	+-----=[ Perceptron Classifier ]=----- 
+	| Train Time         : 0.8181788921356201
+	| Test  Time         : 0.0058438777923583984
+	| Accuracy           : 94.84221241940956
+	| MissClassification : 5.157787580590431
+	------------------------------------------- 
+	+-----=[ Logistic Regression Classifier ]=----- 
+	| Train Time         : 16.00850510597229
+	| Test  Time         : 0.006470918655395508
+	| Accuracy           : 95.75839837122497
+	| MissClassification : 4.241601628775025
+	------------------------------------------- 
+	+-----=[ Gaussian Mixture Classifier ]=----- 
+	| Train Time         : 27.014186143875122
+	| Test  Time         : 0.4287099838256836
+	| Accuracy           : 0.0
+	| MissClassification : 100.0
+	------------------------------------------- 
+	+-----=[ Gaussian Mixture Classifier ]=----- 
+	| Train Time         : 82.01409602165222
+	| Test  Time         : 0.4058098793029785
+	| Accuracy           : 13.674923651170682
+	| MissClassification : 86.32507634882933
+	------------------------------------------- 
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 26.71462106704712
+	| Test  Time         : 16.200309991836548
+	| Accuracy           : 92.53478113335596
+	| MissClassification : 7.4652188666440455
+	------------------------------------------- 
+
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 5.47470498085022
+	| Test  Time         : 0.015655040740966797
+	| Accuracy           : 96.60671869697998
+	| MissClassification : 3.39328130302002
+	------------------------------------------- 
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 3.93115496635437
+	| Test  Time         : 7.070862054824829
+	| Accuracy           : 94.02782490668477
+	| MissClassification : 5.9721750933152356
+	------------------------------------------- 
+	+-----=[ KNN Classifier ]=----- 
+	| Train Time         : 0.010596990585327148
+	| Test  Time         : 1.0162479877471924
+	| Accuracy           : 90.46487953851374
+	| MissClassification : 9.535120461486258
+	------------------------------------------- 
+-----= Iteration:2 
+	+-----=[ Gradient Descent Classifier ]=----- 
+	| Train Time         : 5.885430097579956
+	| Test  Time         : 0.012928962707519531
+	| Accuracy           : 95.72446555819477
+	| MissClassification : 4.275534441805226
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.12889599800109863
+	| Test  Time         : 0.20219802856445312
+	| Accuracy           : 77.02748557855446
+	| MissClassification : 22.97251442144554
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.02907705307006836
+	| Test  Time         : 0.009055137634277344
+	| Accuracy           : 77.29894808279606
+	| MissClassification : 22.701051917203934
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.02713298797607422
+	| Test  Time         : 0.007289886474609375
+	| Accuracy           : 48.761452324397695
+	| MissClassification : 51.238547675602305
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.1493840217590332
+	| Test  Time         : 0.24141502380371094
+	| Accuracy           : 65.52426196131658
+	| MissClassification : 34.47573803868341
+	------------------------------------------- 
+	+-----=[ Perceptron Classifier ]=----- 
+	| Train Time         : 0.7957830429077148
+	| Test  Time         : 0.005876064300537109
+	| Accuracy           : 94.84221241940956
+	| MissClassification : 5.157787580590431
+	------------------------------------------- 
+	+-----=[ Logistic Regression Classifier ]=----- 
+	| Train Time         : 16.10724711418152
+	| Test  Time         : 0.015729904174804688
+	| Accuracy           : 95.75839837122497
+	| MissClassification : 4.241601628775025
+	------------------------------------------- 
+	+-----=[ Gaussian Mixture Classifier ]=----- 
+	| Train Time         : 43.207026958465576
+	| Test  Time         : 0.32523107528686523
+	| Accuracy           : 10.960298608754666
+	| MissClassification : 89.03970139124533
+	------------------------------------------- 
+	+-----=[ Gaussian Mixture Classifier ]=----- 
+	| Train Time         : 92.21293115615845
+	| Test  Time         : 0.3801000118255615
+	| Accuracy           : 23.75296912114014
+	| MissClassification : 76.24703087885986
+	------------------------------------------- 
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 25.004568099975586
+	| Test  Time         : 16.50742793083191
+	| Accuracy           : 92.53478113335596
+	| MissClassification : 7.4652188666440455
+	------------------------------------------- 
+
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 5.255079984664917
+	| Test  Time         : 0.006812095642089844
+	| Accuracy           : 96.60671869697998
+	| MissClassification : 3.39328130302002
+	------------------------------------------- 
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 3.696012020111084
+	| Test  Time         : 7.147020101547241
+	| Accuracy           : 94.02782490668477
+	| MissClassification : 5.9721750933152356
+	------------------------------------------- 
+	+-----=[ KNN Classifier ]=----- 
+	| Train Time         : 0.009835958480834961
+	| Test  Time         : 1.0420610904693604
+	| Accuracy           : 90.46487953851374
+	| MissClassification : 9.535120461486258
+	------------------------------------------- 
+-----= Iteration:3 
+	+-----=[ Gradient Descent Classifier ]=----- 
+	| Train Time         : 4.410933971405029
+	| Test  Time         : 0.005754947662353516
+	| Accuracy           : 95.21547336274178
+	| MissClassification : 4.784526637258229
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.1094369888305664
+	| Test  Time         : 0.19227004051208496
+	| Accuracy           : 77.02748557855446
+	| MissClassification : 22.97251442144554
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.021394968032836914
+	| Test  Time         : 0.005788087844848633
+	| Accuracy           : 77.29894808279606
+	| MissClassification : 22.701051917203934
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.02544379234313965
+	| Test  Time         : 0.004813194274902344
+	| Accuracy           : 48.761452324397695
+	| MissClassification : 51.238547675602305
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.12140607833862305
+	| Test  Time         : 0.19998598098754883
+	| Accuracy           : 65.52426196131658
+	| MissClassification : 34.47573803868341
+	------------------------------------------- 
+	+-----=[ Perceptron Classifier ]=----- 
+	| Train Time         : 0.8328230381011963
+	| Test  Time         : 0.004778861999511719
+	| Accuracy           : 94.84221241940956
+	| MissClassification : 5.157787580590431
+	------------------------------------------- 
+	+-----=[ Logistic Regression Classifier ]=----- 
+	| Train Time         : 16.169371843338013
+	| Test  Time         : 0.005321979522705078
+	| Accuracy           : 95.75839837122497
+	| MissClassification : 4.241601628775025
+	------------------------------------------- 
+	+-----=[ Gaussian Mixture Classifier ]=----- 
+	| Train Time         : 51.47467303276062
+	| Test  Time         : 0.3447690010070801
+	| Accuracy           : 15.982354937224297
+	| MissClassification : 84.0176450627757
+	------------------------------------------- 
+	+-----=[ Gaussian Mixture Classifier ]=----- 
+	| Train Time         : 74.44700217247009
+	| Test  Time         : 0.3622169494628906
+	| Accuracy           : 13.233797081778079
+	| MissClassification : 86.76620291822192
+	------------------------------------------- 
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 24.416831016540527
+	| Test  Time         : 17.048683881759644
+	| Accuracy           : 92.53478113335596
+	| MissClassification : 7.4652188666440455
+	------------------------------------------- 
+
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 5.975069999694824
+	| Test  Time         : 0.0059070587158203125
+	| Accuracy           : 96.60671869697998
+	| MissClassification : 3.39328130302002
+	------------------------------------------- 
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 4.044695854187012
+	| Test  Time         : 7.76114296913147
+	| Accuracy           : 94.02782490668477
+	| MissClassification : 5.9721750933152356
+	------------------------------------------- 
+	+-----=[ KNN Classifier ]=----- 
+	| Train Time         : 0.009656906127929688
+	| Test  Time         : 0.9735209941864014
+	| Accuracy           : 90.46487953851374
+	| MissClassification : 9.535120461486258
+	------------------------------------------- 
+-----= Iteration:4 
+	+-----=[ Gradient Descent Classifier ]=----- 
+	| Train Time         : 7.139855861663818
+	| Test  Time         : 0.005915164947509766
+	| Accuracy           : 96.30132337970818
+	| MissClassification : 3.698676620291822
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.12782907485961914
+	| Test  Time         : 0.23137307167053223
+	| Accuracy           : 77.02748557855446
+	| MissClassification : 22.97251442144554
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.02367115020751953
+	| Test  Time         : 0.006860971450805664
+	| Accuracy           : 77.29894808279606
+	| MissClassification : 22.701051917203934
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.02468395233154297
+	| Test  Time         : 0.006538867950439453
+	| Accuracy           : 48.761452324397695
+	| MissClassification : 51.238547675602305
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.15522003173828125
+	| Test  Time         : 0.24701905250549316
+	| Accuracy           : 65.52426196131658
+	| MissClassification : 34.47573803868341
+	------------------------------------------- 
+	+-----=[ Perceptron Classifier ]=----- 
+	| Train Time         : 0.9941279888153076
+	| Test  Time         : 0.0065648555755615234
+	| Accuracy           : 94.84221241940956
+	| MissClassification : 5.157787580590431
+	------------------------------------------- 
+	+-----=[ Logistic Regression Classifier ]=----- 
+	| Train Time         : 16.382669925689697
+	| Test  Time         : 0.007946968078613281
+	| Accuracy           : 95.75839837122497
+	| MissClassification : 4.241601628775025
+	------------------------------------------- 
+	+-----=[ Gaussian Mixture Classifier ]=----- 
+	| Train Time         : 27.676172018051147
+	| Test  Time         : 0.3726627826690674
+	| Accuracy           : 1.5948422124194097
+	| MissClassification : 98.40515778758059
+	------------------------------------------- 
+	+-----=[ Gaussian Mixture Classifier ]=----- 
+	| Train Time         : 104.06186604499817
+	| Test  Time         : 0.33176088333129883
+	| Accuracy           : 26.399728537495758
+	| MissClassification : 73.60027146250424
+	------------------------------------------- 
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 25.751093864440918
+	| Test  Time         : 17.176058053970337
+	| Accuracy           : 92.53478113335596
+	| MissClassification : 7.4652188666440455
+	------------------------------------------- 
+
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 5.890175104141235
+	| Test  Time         : 0.012605905532836914
+	| Accuracy           : 96.60671869697998
+	| MissClassification : 3.39328130302002
+	------------------------------------------- 
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 3.985503911972046
+	| Test  Time         : 7.484708070755005
+	| Accuracy           : 94.02782490668477
+	| MissClassification : 5.9721750933152356
+	------------------------------------------- 
+	+-----=[ KNN Classifier ]=----- 
+	| Train Time         : 0.010737180709838867
+	| Test  Time         : 1.1876349449157715
+	| Accuracy           : 90.46487953851374
+	| MissClassification : 9.535120461486258
+	------------------------------------------- 
+-----= Iteration:5 
+	+-----=[ Gradient Descent Classifier ]=----- 
+	| Train Time         : 6.020519971847534
+	| Test  Time         : 0.005712032318115234
+	| Accuracy           : 95.45300305395318
+	| MissClassification : 4.546996946046828
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.11027193069458008
+	| Test  Time         : 0.21480512619018555
+	| Accuracy           : 77.02748557855446
+	| MissClassification : 22.97251442144554
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.023658037185668945
+	| Test  Time         : 0.008521080017089844
+	| Accuracy           : 77.29894808279606
+	| MissClassification : 22.701051917203934
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.02832198143005371
+	| Test  Time         : 0.008487939834594727
+	| Accuracy           : 48.761452324397695
+	| MissClassification : 51.238547675602305
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.15626192092895508
+	| Test  Time         : 0.20725607872009277
+	| Accuracy           : 65.52426196131658
+	| MissClassification : 34.47573803868341
+	------------------------------------------- 
+	+-----=[ Perceptron Classifier ]=----- 
+	| Train Time         : 1.033210039138794
+	| Test  Time         : 0.006857872009277344
+	| Accuracy           : 94.84221241940956
+	| MissClassification : 5.157787580590431
+	------------------------------------------- 
+	+-----=[ Logistic Regression Classifier ]=----- 
+	| Train Time         : 16.126985788345337
+	| Test  Time         : 0.0
+	| Accuracy           : 95.75839837122497
+	| MissClassification : 4.241601628775025
+	------------------------------------------- 
+	+-----=[ Gaussian Mixture Classifier ]=----- 
+	| Train Time         : 42.03260612487793
+	| Test  Time         : 0.3748049736022949
+	| Accuracy           : 1.323379708177808
+	| MissClassification : 98.67662029182219
+	------------------------------------------- 
+	+-----=[ Gaussian Mixture Classifier ]=----- 
+	| Train Time         : 102.6088879108429
+	| Test  Time         : 0.39067602157592773
+	| Accuracy           : 32.439769256871394
+	| MissClassification : 67.5602307431286
+	------------------------------------------- 
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 23.645776987075806
+	| Test  Time         : 16.90498995780945
+	| Accuracy           : 92.53478113335596
+	| MissClassification : 7.4652188666440455
+	------------------------------------------- 
+
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 5.5043370723724365
+	| Test  Time         : 0.005865812301635742
+	| Accuracy           : 96.60671869697998
+	| MissClassification : 3.39328130302002
+	------------------------------------------- 
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 3.549973964691162
+	| Test  Time         : 7.023822069168091
+	| Accuracy           : 94.02782490668477
+	| MissClassification : 5.9721750933152356
+	------------------------------------------- 
+	+-----=[ KNN Classifier ]=----- 
+	| Train Time         : 0.01067805290222168
+	| Test  Time         : 1.030724048614502
+	| Accuracy           : 90.46487953851374
+	| MissClassification : 9.535120461486258
+	------------------------------------------- 
+-----= Iteration:6 
+	+-----=[ Gradient Descent Classifier ]=----- 
+	| Train Time         : 5.8056840896606445
+	| Test  Time         : 0.005836009979248047
+	| Accuracy           : 95.04580929759076
+	| MissClassification : 4.95419070240923
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.11211490631103516
+	| Test  Time         : 0.21601605415344238
+	| Accuracy           : 77.02748557855446
+	| MissClassification : 22.97251442144554
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.02546405792236328
+	| Test  Time         : 0.0057909488677978516
+	| Accuracy           : 77.29894808279606
+	| MissClassification : 22.701051917203934
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.025295019149780273
+	| Test  Time         : 0.00587916374206543
+	| Accuracy           : 48.761452324397695
+	| MissClassification : 51.238547675602305
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.12417078018188477
+	| Test  Time         : 0.20879912376403809
+	| Accuracy           : 65.52426196131658
+	| MissClassification : 34.47573803868341
+	------------------------------------------- 
+	+-----=[ Perceptron Classifier ]=----- 
+	| Train Time         : 0.9030609130859375
+	| Test  Time         : 0.008005142211914062
+	| Accuracy           : 94.84221241940956
+	| MissClassification : 5.157787580590431
+	------------------------------------------- 
+	+-----=[ Logistic Regression Classifier ]=----- 
+	| Train Time         : 16.16864013671875
+	| Test  Time         : 0.004744052886962891
+	| Accuracy           : 95.75839837122497
+	| MissClassification : 4.241601628775025
+	------------------------------------------- 
+	+-----=[ Gaussian Mixture Classifier ]=----- 
+	| Train Time         : 33.870285987854004
+	| Test  Time         : 0.3374910354614258
+	| Accuracy           : 37.49575839837122
+	| MissClassification : 62.50424160162878
+	------------------------------------------- 
+	+-----=[ Gaussian Mixture Classifier ]=----- 
+	| Train Time         : 103.68196105957031
+	| Test  Time         : 0.4342489242553711
+	| Accuracy           : 0.7465218866644044
+	| MissClassification : 99.25347811333559
+	------------------------------------------- 
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 22.959943056106567
+	| Test  Time         : 16.62196183204651
+	| Accuracy           : 92.53478113335596
+	| MissClassification : 7.4652188666440455
+	------------------------------------------- 
+
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 5.6283979415893555
+	| Test  Time         : 0.0068972110748291016
+	| Accuracy           : 96.60671869697998
+	| MissClassification : 3.39328130302002
+	------------------------------------------- 
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 3.693150043487549
+	| Test  Time         : 6.749579906463623
+	| Accuracy           : 94.02782490668477
+	| MissClassification : 5.9721750933152356
+	------------------------------------------- 
+	+-----=[ KNN Classifier ]=----- 
+	| Train Time         : 0.009559869766235352
+	| Test  Time         : 1.0594451427459717
+	| Accuracy           : 90.46487953851374
+	| MissClassification : 9.535120461486258
+	------------------------------------------- 
+-----= Iteration:7 
+	+-----=[ Gradient Descent Classifier ]=----- 
+	| Train Time         : 5.804962158203125
+	| Test  Time         : 0.006886959075927734
+	| Accuracy           : 95.99592806243638
+	| MissClassification : 4.004071937563624
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.1209249496459961
+	| Test  Time         : 0.19239187240600586
+	| Accuracy           : 77.02748557855446
+	| MissClassification : 22.97251442144554
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.024240970611572266
+	| Test  Time         : 0.008085012435913086
+	| Accuracy           : 77.29894808279606
+	| MissClassification : 22.701051917203934
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.023166894912719727
+	| Test  Time         : 0.007718086242675781
+	| Accuracy           : 48.761452324397695
+	| MissClassification : 51.238547675602305
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.1212000846862793
+	| Test  Time         : 0.20211005210876465
+	| Accuracy           : 65.52426196131658
+	| MissClassification : 34.47573803868341
+	------------------------------------------- 
+	+-----=[ Perceptron Classifier ]=----- 
+	| Train Time         : 0.8018770217895508
+	| Test  Time         : 0.0061070919036865234
+	| Accuracy           : 94.84221241940956
+	| MissClassification : 5.157787580590431
+	------------------------------------------- 
+	+-----=[ Logistic Regression Classifier ]=----- 
+	| Train Time         : 15.944957971572876
+	| Test  Time         : 0.006928920745849609
+	| Accuracy           : 95.75839837122497
+	| MissClassification : 4.241601628775025
+	------------------------------------------- 
+	+-----=[ Gaussian Mixture Classifier ]=----- 
+	| Train Time         : 42.07744002342224
+	| Test  Time         : 0.35384416580200195
+	| Accuracy           : 0.0
+	| MissClassification : 100.0
+	------------------------------------------- 
+	+-----=[ Gaussian Mixture Classifier ]=----- 
+	| Train Time         : 104.24811506271362
+	| Test  Time         : 0.3943650722503662
+	| Accuracy           : 18.052256532066508
+	| MissClassification : 81.94774346793349
+	------------------------------------------- 
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 22.95483684539795
+	| Test  Time         : 17.087877988815308
+	| Accuracy           : 92.53478113335596
+	| MissClassification : 7.4652188666440455
+	------------------------------------------- 
+
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 5.985900163650513
+	| Test  Time         : 0.008720874786376953
+	| Accuracy           : 96.60671869697998
+	| MissClassification : 3.39328130302002
+	------------------------------------------- 
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 4.085270881652832
+	| Test  Time         : 7.312798023223877
+	| Accuracy           : 94.02782490668477
+	| MissClassification : 5.9721750933152356
+	------------------------------------------- 
+	+-----=[ KNN Classifier ]=----- 
+	| Train Time         : 0.010645866394042969
+	| Test  Time         : 1.1255481243133545
+	| Accuracy           : 90.46487953851374
+	| MissClassification : 9.535120461486258
+	------------------------------------------- 
+-----= Iteration:8 
+	+-----=[ Gradient Descent Classifier ]=----- 
+	| Train Time         : 6.903840065002441
+	| Test  Time         : 0.005896806716918945
+	| Accuracy           : 96.09772650152698
+	| MissClassification : 3.902273498473023
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.11538004875183105
+	| Test  Time         : 0.20177507400512695
+	| Accuracy           : 77.02748557855446
+	| MissClassification : 22.97251442144554
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.02359914779663086
+	| Test  Time         : 0.00594782829284668
+	| Accuracy           : 77.29894808279606
+	| MissClassification : 22.701051917203934
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.023504018783569336
+	| Test  Time         : 0.004817008972167969
+	| Accuracy           : 48.761452324397695
+	| MissClassification : 51.238547675602305
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.11686897277832031
+	| Test  Time         : 0.19226598739624023
+	| Accuracy           : 65.52426196131658
+	| MissClassification : 34.47573803868341
+	------------------------------------------- 
+	+-----=[ Perceptron Classifier ]=----- 
+	| Train Time         : 0.8260951042175293
+	| Test  Time         : 0.007641792297363281
+	| Accuracy           : 94.84221241940956
+	| MissClassification : 5.157787580590431
+	------------------------------------------- 
+	+-----=[ Logistic Regression Classifier ]=----- 
+	| Train Time         : 16.15515899658203
+	| Test  Time         : 0.008115053176879883
+	| Accuracy           : 95.75839837122497
+	| MissClassification : 4.241601628775025
+	------------------------------------------- 
+	+-----=[ Gaussian Mixture Classifier ]=----- 
+	| Train Time         : 43.093839168548584
+	| Test  Time         : 0.41095590591430664
+	| Accuracy           : 21.547336274177127
+	| MissClassification : 78.45266372582287
+	------------------------------------------- 
+	+-----=[ Gaussian Mixture Classifier ]=----- 
+	| Train Time         : 76.04777312278748
+	| Test  Time         : 0.3780388832092285
+	| Accuracy           : 14.048184594502885
+	| MissClassification : 85.95181540549711
+	------------------------------------------- 
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 24.365794897079468
+	| Test  Time         : 17.020291090011597
+	| Accuracy           : 92.53478113335596
+	| MissClassification : 7.4652188666440455
+	------------------------------------------- 
+
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 5.621717929840088
+	| Test  Time         : 0.01572108268737793
+	| Accuracy           : 96.60671869697998
+	| MissClassification : 3.39328130302002
+	------------------------------------------- 
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 4.114264011383057
+	| Test  Time         : 7.338125944137573
+	| Accuracy           : 94.02782490668477
+	| MissClassification : 5.9721750933152356
+	------------------------------------------- 
+	+-----=[ KNN Classifier ]=----- 
+	| Train Time         : 0.009572029113769531
+	| Test  Time         : 1.02091383934021
+	| Accuracy           : 90.46487953851374
+	| MissClassification : 9.535120461486258
+	------------------------------------------- 
+-----= Iteration:9 
+	+-----=[ Gradient Descent Classifier ]=----- 
+	| Train Time         : 5.96512508392334
+	| Test  Time         : 0.005846977233886719
+	| Accuracy           : 95.28333898880217
+	| MissClassification : 4.716661011197829
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.13863396644592285
+	| Test  Time         : 0.20140719413757324
+	| Accuracy           : 77.02748557855446
+	| MissClassification : 22.97251442144554
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.023406028747558594
+	| Test  Time         : 0.005873918533325195
+	| Accuracy           : 77.29894808279606
+	| MissClassification : 22.701051917203934
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.022635936737060547
+	| Test  Time         : 0.0058710575103759766
+	| Accuracy           : 48.761452324397695
+	| MissClassification : 51.238547675602305
+	------------------------------------------- 
+	+-----=[ Naive Bayes Classifier ]=----- 
+	| Train Time         : 0.11513805389404297
+	| Test  Time         : 0.2147688865661621
+	| Accuracy           : 65.52426196131658
+	| MissClassification : 34.47573803868341
+	------------------------------------------- 
+	+-----=[ Perceptron Classifier ]=----- 
+	| Train Time         : 0.836859941482544
+	| Test  Time         : 0.00592803955078125
+	| Accuracy           : 94.84221241940956
+	| MissClassification : 5.157787580590431
+	------------------------------------------- 
+	+-----=[ Logistic Regression Classifier ]=----- 
+	| Train Time         : 17.13168692588806
+	| Test  Time         : 0.0069200992584228516
+	| Accuracy           : 95.75839837122497
+	| MissClassification : 4.241601628775025
+	------------------------------------------- 
+	+-----=[ Gaussian Mixture Classifier ]=----- 
+	| Train Time         : 46.771907806396484
+	| Test  Time         : 0.35942506790161133
+	| Accuracy           : 10.994231421784866
+	| MissClassification : 89.00576857821514
+	------------------------------------------- 
+	+-----=[ Gaussian Mixture Classifier ]=----- 
+	| Train Time         : 95.80218195915222
+	| Test  Time         : 0.32813310623168945
+	| Accuracy           : 17.678995588734306
+	| MissClassification : 82.32100441126569
+	------------------------------------------- 
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 24.009493827819824
+	| Test  Time         : 16.60217809677124
+	| Accuracy           : 92.53478113335596
+	| MissClassification : 7.4652188666440455
+	------------------------------------------- 
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 5.524126052856445
+	| Test  Time         : 0.005918025970458984
+	| Accuracy           : 96.60671869697998
+	| MissClassification : 3.39328130302002
+	------------------------------------------- 
+	+-----=[ SVM Classifier ]=----- 
+	| Train Time         : 3.722835063934326
+	| Test  Time         : 6.939584970474243
+	| Accuracy           : 94.02782490668477
+	| MissClassification : 5.9721750933152356
+	------------------------------------------- 
+	+-----=[ KNN Classifier ]=----- 
+	| Train Time         : 0.01436614990234375
+	| Test  Time         : 1.0129868984222412
+	| Accuracy           : 90.46487953851374
+	| MissClassification : 9.535120461486258
+	------------------------------------------- 
