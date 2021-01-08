@@ -190,8 +190,37 @@ class MHARC:
                     str(acc['test-time']) + '\n'
                 )
 
+    def KNNOptimizer(self):
+        self.acc = {}
+        for knn in range(30):
+            for itr in range(10):
+                kneighbors = KNeighborsClassifier(self.train_x, self.train_y, self.test_x, self.test_y)
+                # -----= KNeighbors
+                kneighbors.train_withK(2 * knn + 1)
+                kneighbors_labels = kneighbors.predic()
+                kneighbors_acc = kneighbors.getAccuracy()
+                kneighbors.printResult()
+                self.acc[str(2 * knn + 1) + 'NN-' + str(itr)] = {'accuracy': kneighbors_acc,
+                                                                 'train-time': kneighbors.trainTime(),
+                                                                 'test-time': kneighbors.testTime(),
+                                                                 }
+
+        file_name = '../outs/knn-res-' + datetime.datetime.now().strftime('%d-%H-%M') + '.csv'
+        file = open(file_name, "w+")
+        file.write('Number Of K,iteration,accuracy,train-time,test-time\n')
+        for itr, acc in self.acc.items():
+            key = itr.split('-')[0].split("NN")[0]
+            i = itr.split('-')[1]
+            file.write(
+                str(key) + ',' +
+                str(i) + ',' +
+                str(acc['accuracy']) + ',' +
+                str(acc['train-time']) + ',' +
+                str(acc['test-time']) + '\n'
+            )
+
 
 if __name__ == '__main__':
     mharc = MHARC(True)
-    mharc.executor()
-    mharc.SaveResults()
+    mharc.KNNOptimizer()
+    # mharc.SaveResults()
